@@ -1,15 +1,20 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/',
   plugins: [react()],
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        assetFileNames: 'assets/[name].[hash].[ext]'
-      }
-    }
-  }
+  css: {
+    postcss: './postcss.config.js' // Explicit path to CJS file
+  },
+  // server: {
+  //   host: '0.0.0.0', // Allows external connections
+  //   port: 97, // Your custom port
+  //   strictPort: true,
+  //   allowedHosts: [
+  //     '2197292c9097.ngrok-free.app', // Your specific ngrok host
+  //     '.ngrok-free.app' // Wildcard for all ngrok subdomains (recommended)
+  //   ]
+  // }
 })
