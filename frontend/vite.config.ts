@@ -3,5 +3,13 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // No need for explicit PostCSS config unless you have special needs
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash].[ext]'
+      }
+    }
+  }
 })
