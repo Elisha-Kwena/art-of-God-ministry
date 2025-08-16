@@ -17,10 +17,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <% if (process.env.NODE_ENV === 'development') { %>
-      <script type="module" src="/src/main.tsx"></script>
-    <% } else { %>
-      <script type="module" src="/dist/main.js"></script>
-    <% } %>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
