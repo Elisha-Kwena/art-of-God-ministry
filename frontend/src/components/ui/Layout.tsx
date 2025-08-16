@@ -5,7 +5,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow w-full">
         <Outlet /> {/* This renders the current page */}
       </main>
     </div>

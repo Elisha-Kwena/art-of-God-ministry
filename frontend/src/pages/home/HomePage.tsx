@@ -1,12 +1,16 @@
 import React from "react";
-
+import Hero from "../../components/sections/Hero";
+import Welcome from "../../components/sections/Welcome";
+import Services from "../../components/sections/Services";
 const HomePage:React.FC = () => {
     return (
-      <div className="min-h-[calc(100vh-64px)] flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-red-500">
-          Welcome to Our Church
-        </h1>
-      </div>
+        <>
+        <div className="w-full flex flex-col">
+          <Hero/>
+          <Welcome/>
+          <Services/>
+        </div>
+        </>
     );
   };
 export default HomePage;

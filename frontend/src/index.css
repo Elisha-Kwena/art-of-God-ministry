@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-holtwood {
+    font-family: "Holtwood One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+@font-face{
+    font-family:'Brigends';
+    src: url('/fonts/Brigends.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family:'Coolvetica';
+    src: url('/fonts/Coolvetica.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 *{
@@ -10,10 +34,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+  
 body{
     width: 100%;
     font-family: 'Lora', serif;
     overflow-x: hidden;
+    font-family: "Abel", sans-serif;
+    font-style: normal;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -24,3 +51,16 @@ body{
 .heading {
     font-family: 'Playfair Display', serif;
   }
+
+.text-gold{
+    color:#F5DEB3
+}
+.bg-gold{
+    background-color:#F5DEB3;
+}
+.bg-red{
+    background-color: red;
+}
+.welcome{
+    background-color: #f0f0f0;
+}
