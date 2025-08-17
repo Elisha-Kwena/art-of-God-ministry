@@ -53,7 +53,7 @@ const Services:React.FC = () =>{
                 Join us for powerful services filled with worship, the Word, and miracles. All are welcome!</p>
 
                 {/* Services Container */}
-                <div className="grid grid-cols-1 place-items-start sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 max-w-7xl mx-auto py-8">
+                <div className="grid grid-cols-1 place-items-start sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6  mx-auto py-8">
                     
 
                     {/* Sunday Service */}

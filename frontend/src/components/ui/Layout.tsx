@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../navigation/Navbar';
+import Footer from '../sections/Footer';
 
 export default function Layout() {
   return (
@@ -8,6 +9,7 @@ export default function Layout() {
       <main className="flex-grow w-full">
         <Outlet /> {/* This renders the current page */}
       </main>
+      <Footer/>
     </div>
   );
 }

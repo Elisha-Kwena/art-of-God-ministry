@@ -6,6 +6,8 @@ export const ROUTES = {
     SERVICES: "/services",
     LEADERSHIP: "/leadership",
     MEDIA: "/media",
+    EVENTS: "/events",
+    SERMON:"/sermon",
     CONTACT: "/contact",
     LOGIN: "/login", // For future use
     SIGNUP: "/signup", // For future use

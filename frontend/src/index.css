@@ -64,3 +64,23 @@ body{
 .welcome{
     background-color: #f0f0f0;
 }
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+  }
+  
+  .swiper-slide {
+
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

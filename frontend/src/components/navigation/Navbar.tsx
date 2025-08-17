@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
             <Link 
               key={item.id} 
               to={item.path}
-              className="font-bold text-xl hover:text-gold-200 transition-colors" // Added hover effect
+              className="font-bold text-xl hover:text-gold-200 transition-all duration-300 p-3 py-2 hover:text-white hover:bg-[#ab4f43]" // Added hover effect
             >
               {item.label}
             </Link>
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
         {/* endnav */}
         <div className="flex items-center justify-between gap-4">
             {socials.map(item =>(
-                <a href={item.path} className="flex items-center justify-center">
+                <a key={item.id} href={item.path} className="flex items-center justify-center">
                     <FontAwesomeIcon icon={item.banner} className={`h-6 w-6 ${item.color}`}/>
                 </a>
             ))}

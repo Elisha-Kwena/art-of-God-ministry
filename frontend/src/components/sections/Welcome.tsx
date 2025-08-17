@@ -7,7 +7,7 @@ import { about } from "../../data/welcome";
 const Welcome:React.FC = () =>{
     return(
         <>
-        <section className="w-full relative h-screen welcome">
+        <section className="w-full relative h-screen welcome pt-20">
             <div className="w-[90%] h-full mx-auto flex items-center justify-center flex-col gap-12">
                 <div className="w-full">
                     <h1 className="font-abel text-center text-6xl capitalize font-extrabold text-[#ab4f43]">Welcome to art of God Ministry</h1>
