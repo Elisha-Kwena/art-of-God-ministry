@@ -86,7 +86,7 @@ const Gallery: React.FC = () => {
           </div>
           <div className="mt-16 flex flex-col items-center justify-center">
             <p className="mb-8 text-xl" data-aos="fade-up" data-aos-delay="400">Share your photos with us @ChurchName #OurFaithFamily</p>
-            <Link to="" className="uppercase text-3xl text-[#ab4f43] border-[2px] border-[#ab4f43] p-2 px-5 rounded-[3px] transition-all duration-300 hover:text-white hover:bg-[#ab4f43]" data-aos="fade-up" data-aos-delay="400">View more in our Gallery
+            <Link to="" className="uppercase text-xl lg:text-3xl text-[#ab4f43] border-[2px] border-[#ab4f43] p-2 px-5 rounded-[3px] transition-all duration-300 hover:text-white hover:bg-[#ab4f43]" data-aos="fade-up" data-aos-delay="400">View more in our Gallery
             </Link>
           </div>
         </div>
