@@ -6,7 +6,7 @@ const SectionBreak:React.FC =() =>{
     return(
         <>
         <div className="w-full flex items-center justify-center">
-            <img src={star} alt="" />
+            <img src={star} alt="" className=""/>
         </div>
         </>
     )

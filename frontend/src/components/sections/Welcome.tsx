@@ -7,14 +7,14 @@ import { about } from "../../data/welcome";
 const Welcome:React.FC = () =>{
     return(
         <>
-        <section className="w-full relative h-screen welcome pt-20">
+        <section className="w-full relative lg:h-screen welcome pt-20">
             <div className="w-[90%] h-full mx-auto flex items-center justify-center flex-col gap-12">
                 <div className="w-full">
-                    <h1 className="font-abel text-center text-6xl capitalize font-extrabold text-[#ab4f43]" data-aos="fade-up">Welcome to art of God Ministry</h1>
-                    <p className="text-black text-2xl text-center mt-4" data-aos="fade-u" data-aos-delay="800">A sanctuary for the seeking and the saved, The Ark of God Ministry upholds the timeless truths of Scripture, fostering deep worship and discipleship.</p>
+                    <h1 className="font-abel text-center text-4xl lg:text-6xl capitalize font-extrabold text-[#ab4f43]" data-aos="fade-up">Welcome to art of God Ministry</h1>
+                    <p className="text-black text-xl lg:text-2xl text-center mt-4" data-aos="fade-u" data-aos-delay="800">A sanctuary for the seeking and the saved, The Ark of God Ministry upholds the timeless truths of Scripture, fostering deep worship and discipleship.</p>
                 </div>
                 
-                <div className="w-[90%] grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="w-full lg:w-[90%] grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {about.map(item =>(
                         <WelcomeCard 
                         key={item.id}

@@ -47,9 +47,9 @@ const Services:React.FC = () =>{
     return(
         <>
         <section className="welcome flex items-center justify-center py-10">
-            <div className="w-[90%] mx-auto flex flex-col gap-2 items-center justify-center">
-                <h1 className="text-[#ab4f43] text-6xl" data-aos="fade-up" data-aos-delay="800">Our church Services</h1>
-                <p className="text-black text-xl mt-2 w-3/4 text-center" data-aos="fade-up" data-aos-delay="800"> At The Ark of God Ministry, we gather to seek God’s presence, grow in faith, and fellowship as a family.  
+            <div className="w-full lg:w-[90%] mx-auto flex flex-col gap-2 items-center justify-center">
+                <h1 className="text-[#ab4f43] text-4xl lg:text-6xl" data-aos="fade-up" data-aos-delay="800">Our church Services</h1>
+                <p className="text-black text-md lg:text-xl mt-2 w-3/4 text-center" data-aos="fade-up" data-aos-delay="800"> At The Ark of God Ministry, we gather to seek God’s presence, grow in faith, and fellowship as a family.  
                 Join us for powerful services filled with worship, the Word, and miracles. All are welcome!</p>
 
                 {/* Services Container */}

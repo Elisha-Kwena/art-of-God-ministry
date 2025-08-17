@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Church Info */}
-                    <div className="space-y-4" data-aos="fade-up" data-aos-delay="400">
+                    <div className="space-y-4">
                         <h1 className="text-2xl font-bold">The Ark of God Ministry</h1>
                         <p className="text-gray-300">
                             Established in 2011, The Ark of God Ministry has been a beacon of hope in Dandora Phase 5, 
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="space-y-4" data-aos="fade-up" data-aos-delay="400">
+                    <div className="space-y-4">
                         <h2 className="text-xl font-bold">Quick Links</h2>
                         <ul className="space-y-2">
                             {links.map(item => (
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="space-y-4" data-aos="fade-up" data-aos-delay="400">
+                    <div className="space-y-4" >
                         <h2 className="text-xl font-bold">Contact Us</h2>
                         <address className="not-italic space-y-2">
                             <p className="flex items-start">
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Map */}
-                    <div className="space-y-4" data-aos="fade-up" data-aos-delay="400">
+                    <div className="space-y-4">
                         <h2 className="text-xl font-bold">Our Location</h2>
                         <div className="rounded-lg overflow-hidden border-2 border-[#ab4f43]">
                             <img 
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
 
                 {/* Services Section */}
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-gray-700">
-                    <div className="space-y-2" data-aos="fade-down" data-aos-delay="400">
+                    <div className="space-y-2">
                         <h3 className="text-lg font-semibold text-[#ab4f43]">Sunday Services</h3>
                         <ul className="space-y-1 text-gray-300">
                             <li>8:00 AM – 10:30 AM: First Service</li>
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
                             <li>After 1:00 PM: Fellowship Tea</li>
                         </ul>
                     </div>
-                    <div className="space-y-2" data-aos="fade-down" data-aos-delay="400">
+                    <div className="space-y-2" >
                         <h3 className="text-lg font-semibold text-[#ab4f43]">Weekly Activities</h3>
                         <ul className="space-y-1 text-gray-300">
                             <li>Wednesday: 10:00 AM – Midweek Service</li>
@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
                             <li>Saturday: Church Cleaning</li>
                         </ul>
                     </div>
-                    <div className="space-y-2" data-aos="fade-down" data-aos-delay="400">
+                    <div className="space-y-2" >
                         <h3 className="text-lg font-semibold text-[#ab4f43]">Our Leadership</h3>
                         <ul className="space-y-1 text-gray-300">
                             <li>Bishop: Overseer of churches</li>

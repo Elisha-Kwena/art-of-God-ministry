@@ -37,8 +37,8 @@
   
 body{
     width: 100%;
+    background-color: red;
     font-family: 'Lora', serif;
-    overflow-x: hidden;
     font-family: "Abel", sans-serif;
     font-style: normal;
 }

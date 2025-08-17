@@ -41,14 +41,14 @@ const Gallery: React.FC = () => {
   return (
     <>
       <section className="w-full py-12 welcome">
-        <div className="w-[90%] mx-auto flex flex-col items-center justify-center gap-4">
+        <div className="w-full lg:w-[90%] mx-auto flex flex-col items-center justify-center gap-4 px-2">
           <div className="w-full">
-            <h1 className="text-6xl text-center mb-4 font-bold text-[#ab4f43]" data-aos="fade-up" data-aos-delay="400">Visualizing Our Faith Journey</h1>
+            <h1 className="text-4xl lg:text-6xl text-center mb-4 font-bold text-[#ab4f43]" data-aos="fade-up" data-aos-delay="400">Visualizing Our Faith Journey</h1>
             <p className="text-xl text-black text-center" data-aos="fade-up" data-aos-delay="400">Through the Lens of Faith: Moments That Move Us</p>
             <p className="text-xl text-black text-center" data-aos="fade-up" data-aos-delay="400">A living scrapbook of worship, service, and fellowship—where God's love becomes visible.</p>
           </div>
           <p className="text-xl text-black text-center" data-aos="fade-up" data-aos-delay="400">CLICK TO VIEW FULL PHOTO</p>
-          <div className="w-full h-[90vh] py-4 flex items-center justify-between gap-2">
+          <div className="w-full lg:h-[90vh] h-[50vh] py-4 flex items-center justify-between gap-2">
             {/* left */}
             <div className="w-1/4 h-full flex flex-col gap-2">
               <div className="h-1/3 w-full bg-red rounded-md cursor-pointer" onClick={() => openModal(images.left1)} data-aos="fade-up" data-aos-delay="400">
