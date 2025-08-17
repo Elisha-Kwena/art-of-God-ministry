@@ -10,5 +10,6 @@ export default defineConfig({
       '.ngrok-free.app' // Allow all ngrok domains (recommended)
     ]
   }
+
   // No need for explicit PostCSS config unless you have special needs
 })

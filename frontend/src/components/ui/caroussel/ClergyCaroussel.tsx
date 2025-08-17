@@ -8,9 +8,14 @@ import ClergyCard from "../cards/ClergyCard";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Swiper as SwiperType} from 'swiper'
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+
+
+// Replace all Swiper CSS imports with:
+// import '../node_modules/swiper/swiper.min.css';
+// import '../node_modules/swiper/modules/navigation.min.css';
+// import '../node_modules/swiper/modules/pagination.min.css';
+
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import { clergy } from "../../../data/clergy";
@@ -26,7 +31,7 @@ const ClergyCaroussel:React.FC = () =>{
             </div>
             <div className="absolute lg:w-[100px] w-[50px] h-full left-0 z-10 bg-gradient-to-r from-[#f0f0f0] to-transparent"></div>
             <div className="absolute lg:w-[100px] w-[50px] h-full right-0 z-10 bg-gradient-to-l from-[#f0f0f0] to-transparent"></div>
-            <div className="nav-buttons flex gap-2 absolute z-10 left-2 -bottom-8 ">
+            <div className="nav-buttons flex gap-2 absolute z-10 left-2 -bottom-8 " data-aos="fade-up" data-aos-delay="400">
                 <button
                 className='flex items-center justify-center bg-transparent text-2xl text-[#ab4f43] w-12 h-12 rounded-full border-[3px] border-[#ab4f43] transition-all duration-300 hover:bg-[#ab4f43] hover:text-white'
                 onClick={() => swiperRef.current?.slidePrev()}
@@ -64,6 +69,7 @@ const ClergyCaroussel:React.FC = () =>{
                 onSlideChange={() => {
                     swiperRef.current?.autoplay?.start();
                 }}
+                data-aos="fade-up" data-aos-delay="400"
             >
                 {clergy.map(person => (
                     <SwiperSlide key={person.id}>
@@ -80,14 +86,6 @@ const ClergyCaroussel:React.FC = () =>{
                     </SwiperSlide>
                 ))}
                 
-                {/* <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide> */}
             </Swiper>
 
             

@@ -48,8 +48,8 @@ const Services:React.FC = () =>{
         <>
         <section className="welcome flex items-center justify-center py-10">
             <div className="w-[90%] mx-auto flex flex-col gap-2 items-center justify-center">
-                <h1 className="text-[#ab4f43] text-6xl">Our church Services</h1>
-                <p className="text-black text-xl mt-2 w-3/4 text-center"> At The Ark of God Ministry, we gather to seek God’s presence, grow in faith, and fellowship as a family.  
+                <h1 className="text-[#ab4f43] text-6xl" data-aos="fade-up" data-aos-delay="800">Our church Services</h1>
+                <p className="text-black text-xl mt-2 w-3/4 text-center" data-aos="fade-up" data-aos-delay="800"> At The Ark of God Ministry, we gather to seek God’s presence, grow in faith, and fellowship as a family.  
                 Join us for powerful services filled with worship, the Word, and miracles. All are welcome!</p>
 
                 {/* Services Container */}
@@ -57,7 +57,7 @@ const Services:React.FC = () =>{
                     
 
                     {/* Sunday Service */}
-                    <div className="flex items-start justify-center flex-col">
+                    <div className="flex items-start justify-center flex-col" data-aos="fade-up" data-aos-delay="800">
                         <div className="banner w-full h-[230px] overflow-hidden rounded-md">
                             <img src={banner1} alt="" className="w-full h-full object-cover rounded-md hover:scale-125 transition-all duration-300 ease-in-out" />
                         </div>
@@ -91,7 +91,7 @@ const Services:React.FC = () =>{
 
 
                     {/* Wednesday Service */}
-                    <div className="flex items-start justify-center flex-col gap-2 ">
+                    <div className="flex items-start justify-center flex-col gap-2 " data-aos="fade-up" data-aos-delay="800">
                         <div className="banner w-full h-[230px] overflow-hidden rounded-md">
                             <img src={banner2} alt="" className="w-full h-full object-cover rounded-md hover:scale-125 transition-all duration-300 ease-in-out" />
                         </div>
@@ -111,7 +111,7 @@ const Services:React.FC = () =>{
 
 
                     {/* Saturday Service */}
-                    <div className="flex items-start justify-center flex-col gap-2">
+                    <div className="flex items-start justify-center flex-col gap-2" data-aos="fade-up" data-aos-delay="800">
                         <div className="banner w-full h-[230px] overflow-hidden rounded-md">
                             <img src={banner3} alt="" className="w-full h-full object-cover rounded-md hover:scale-125 transition-all duration-300 ease-in-out" />
                         </div>
