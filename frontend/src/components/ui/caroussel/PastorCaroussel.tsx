@@ -1,12 +1,13 @@
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Mousewheel, Keyboard } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
 import PastorCard from '../cards/PastorCards';
 import { clergy } from '../../../data/clergy';
 
 export default function PastorCaroussel() {
-  const mobileSwiperRef = useRef(null);
-  const desktopSwiperRef = useRef(null);
+  const mobileSwiperRef = useRef<SwiperType | null>(null);
+  const desktopSwiperRef = useRef<SwiperType | null>(null);
 
   return (
     <>
@@ -53,18 +54,6 @@ export default function PastorCaroussel() {
             </svg>
           </button>
         </div>
-
-        {/* Desktop Pagination Dots
-        <div className="flex gap-2 mt-6">
-          {clergy.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => desktopSwiperRef.current?.slideTo(index)}
-              className={`w-3 h-3 rounded-full transition-all ${desktopSwiperRef.current?.activeIndex === index ? 'bg-[#ab4f43] w-6' : 'bg-gray-300'}`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))} */}
-        {/* </div> */}
       </div>
 
       {/* Mobile Slide with Custom Navigation */}
@@ -104,18 +93,6 @@ export default function PastorCaroussel() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          
-          {/* Mobile Pagination Dots */}
-          {/* <div className="flex gap-2 mx-4">
-            {clergy.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => mobileSwiperRef.current?.slideTo(index)}
-                className={`w-2 h-2 rounded-full transition-all ${mobileSwiperRef.current?.realIndex === index ? 'bg-[#ab4f43] w-4' : 'bg-gray-300'}`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div> */}
           
           <button 
             onClick={() => mobileSwiperRef.current?.slideNext()}
