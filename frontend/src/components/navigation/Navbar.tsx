@@ -1,7 +1,7 @@
 import React from "react";
 import { ROUTES } from "../../config/routes";
 import { menuitems } from "../../data/menu";
-import { Link } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import logo from '../../assets/logo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook,faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -34,13 +34,14 @@ const Navbar: React.FC<NavbarProps> = ({isSidebarOpen, toggleSidebar}) => {
         {/* Navigation */}
         <div className="hidden lg:flex items-center justify-between gap-6">
           {menuitems.map(item => (
-            <Link 
+            <NavLink 
               key={item.id} 
               to={item.path}
-              className="font-bold text-xl hover:text-gold-200 transition-all duration-300 p-3 py-2 hover:text-white hover:bg-[#ab4f43]" // Added hover effect
+              className={({isActive}) => 
+                `menu-item font-bold text-xl hover:text-gold-200 transition-all duration-300 p-3 py-2 hover:text-white ${isActive ? 'menu-item-active':''}`} // Added hover effect
             >
               {item.label}
-            </Link>
+            </NavLink>
           ))}
         </div>
 

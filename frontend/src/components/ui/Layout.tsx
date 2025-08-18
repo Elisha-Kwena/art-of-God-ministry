@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Navbar from '../navigation/Navbar';
 import Footer from '../sections/Footer';
 import Sidebar from '../navigation/Sidebar';
-import ToggleSidebar from './toggleSidebar/ToggleSidebar';
 
 export default function Layout() {
   const [isSidebarOpen, setSidebarOpen] = useState<boolean>(false)
