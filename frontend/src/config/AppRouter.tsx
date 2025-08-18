@@ -5,6 +5,7 @@ import Layout from "../components/ui/Layout";
 import Loader from "../components/ui/Loader";
 
 const HomePage = lazy(() => import("../pages/home/HomePage"));
+const AboutPage = lazy(() => import("../pages/About/About"))
 const NotFoundPage = lazy(() => import('../pages/notFound/NotFound'));
 
 const AppRouter = () => {
@@ -15,6 +16,7 @@ const AppRouter = () => {
         <Route element={<Layout />}>
           {/* Public Routes */}
           <Route path={ROUTES.HOME} element={<HomePage />} />
+          <Route path={ROUTES.ABOUT} element={<AboutPage />} />
           
           {/* 404 Handling */}
           <Route path="*" element={<NotFoundPage />} />

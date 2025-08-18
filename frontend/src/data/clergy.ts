@@ -16,7 +16,13 @@ export const clergy = [
       "image": man1,
       "bio": "Ordained in 2005, focused on unity and discipleship.",
       "phone": "+2348012345678",
-      "email": "bishop@church.org"
+      "email": "bishop@church.org",
+      "social": {
+        "facebook": "https://facebook.com/michael.johnson.ministry",
+        "twitter": "https://twitter.com/deacon_mjohnson",
+        "instagram": "https://instagram.com/deacon.mike",
+        "linkedin": "https://linkedin.com/in/michaeljohnsonministry"
+      }
     },
     {
       "id": 2,
@@ -27,7 +33,13 @@ export const clergy = [
       "image": woman1,
       "bio": "20+ years in ministry. Specializes in prayer and outreach.",
       "phone": "+2348023456789",
-      "email": "sarah@church.org"
+      "email": "sarah@church.org",
+      "social": {
+        "facebook": "https://facebook.com/michael.johnson.ministry",
+        "twitter": "https://twitter.com/deacon_mjohnson",
+        "instagram": "https://instagram.com/deacon.mike",
+        "linkedin": "https://linkedin.com/in/michaeljohnsonministry"
+      }
     },
     {
       "id": 3,
@@ -38,7 +50,13 @@ export const clergy = [
       "image": man2,
       "bio": "Coordinates community food drives since 2018.",
       "phone": "+2348034567890",
-      "email": "james@church.org"
+      "email": "james@church.org",
+      "social": {
+        "facebook": "https://facebook.com/michael.johnson.ministry",
+        "twitter": "https://twitter.com/deacon_mjohnson",
+        "instagram": "https://instagram.com/deacon.mike",
+        "linkedin": "https://linkedin.com/in/michaeljohnsonministry"
+      }
     },
     {
       "id": 4,
@@ -49,7 +67,13 @@ export const clergy = [
       "image": woman2,
       "bio": "Helping couples build Christ-centered homes since 2015.",
       "phone": "+2348045678901",
-      "email": "marriage@church.org"
+      "email": "marriage@church.org",
+      "social": {
+        "facebook": "https://facebook.com/michael.johnson.ministry",
+        "twitter": "https://twitter.com/deacon_mjohnson",
+        "instagram": "https://instagram.com/deacon.mike",
+        "linkedin": "https://linkedin.com/in/michaeljohnsonministry"
+      }
     },
     {
       "id": 5,
@@ -60,7 +84,13 @@ export const clergy = [
       "image": man3,
       "bio": "Leads community food drives since 2018.",
       "phone": "+2348056789012",
-      "email": "james@church.org"
+      "email": "james@church.org",
+      "social": {
+        "facebook": "https://facebook.com/michael.johnson.ministry",
+        "twitter": "https://twitter.com/deacon_mjohnson",
+        "instagram": "https://instagram.com/deacon.mike",
+        "linkedin": "https://linkedin.com/in/michaeljohnsonministry"
+      }
     },
     {
       "id": 6,
@@ -71,7 +101,13 @@ export const clergy = [
       "image": woman3,
       "bio": "Helping couples build Christ-centered homes.",
       "phone": "+2348067890123",
-      "email": "marriage@church.org"
+      "email": "marriage@church.org",
+      "social": {
+        "facebook": "https://facebook.com/michael.johnson.ministry",
+        "twitter": "https://twitter.com/deacon_mjohnson",
+        "instagram": "https://instagram.com/deacon.mike",
+        "linkedin": "https://linkedin.com/in/michaeljohnsonministry"
+      }
     }
 
   ]

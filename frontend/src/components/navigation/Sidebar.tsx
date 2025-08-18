@@ -21,12 +21,12 @@ interface SidebarProps {
 
 const menuitems = [
   { id: 1, icon: faHome, label: "Home", path: ROUTES.HOME },
-  { id: 2, icon: faCircleInfo, label: "About", path: ROUTES.ABOUT },
-  { id: 3, icon: faHandsHelping, label: "Services", path: ROUTES.SERVICES },
-  { id: 4, icon: faBible, label: "Sermon", path: ROUTES.SERMON },
-  { id: 5, icon: faCalendar, label: "Events", path: ROUTES.EVENTS },
-  { id: 6, icon: faUsers, label: "Leadership", path: ROUTES.LEADERSHIP },
-  { id: 7, icon: faImages, label: "Gallery", path: ROUTES.GALLERY },
+  { id: 2, icon: faHandsHelping, label: "Services", path: ROUTES.SERVICES },
+  { id: 3, icon: faBible, label: "Sermon", path: ROUTES.SERMON },
+  { id: 4, icon: faCalendar, label: "Events", path: ROUTES.EVENTS },
+  { id: 5, icon: faUsers, label: "Leadership", path: ROUTES.LEADERSHIP },
+  { id: 6, icon: faImages, label: "Gallery", path: ROUTES.GALLERY },
+  { id: 7, icon: faCircleInfo, label: "About", path: ROUTES.ABOUT },
   { id: 8, icon: faEnvelope, label: "contact", path: ROUTES.CONTACT },
 ];
 

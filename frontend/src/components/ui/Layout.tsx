@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Navbar from '../navigation/Navbar';
 import Footer from '../sections/Footer';
 import Sidebar from '../navigation/Sidebar';
-
+import ScrollTop from './ScrollTop';
 export default function Layout() {
   const [isSidebarOpen, setSidebarOpen] = useState<boolean>(false)
 
@@ -24,6 +24,7 @@ export default function Layout() {
         <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar}/>
         <Outlet /> {/* This renders the current page */}
       </main>
+      <ScrollTop/>
       <Footer/>
     </div>
   );

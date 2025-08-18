@@ -28,6 +28,18 @@
     font-display: swap;
 }
 
+/* Change text highlight color */
+::selection {
+    background: #ab4f43; /* Your primary color (reddish-brown) */
+    color: white; /* Text color when highlighted */
+  }
+  
+  /* For Firefox */
+  ::-moz-selection {
+    background: #ab4f43;
+    color: white;
+  }
+
 
 *{
     margin: 0;
@@ -129,3 +141,51 @@ body{
     background-color: #ab4f43;
     border-radius: 10px;
   }
+
+
+  /* Ripple Animation */
+.ripple-box {
+    position: absolute;
+    width: 56px; /* matches w-14 */
+    height: 56px;
+    background: #fccbc5;
+    border-radius: 50%;
+    z-index: 5;
+    animation: ripple 2s infinite ease-out;
+  }
+  
+  .ripple-box-delayed {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    background: #fccbc5;
+    border-radius: 50%;
+    z-index: 5;
+    animation: ripple 2s infinite ease-out 1s; /* 1s delay */
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(3); /* grows to ~w-56 (196px) */
+      opacity: 0;
+    }
+  }
+
+  /* scroll top animation */
+  .tooltip {
+    @apply invisible group-hover:visible absolute bottom-full mb-2 px-2 py-1 text-sm bg-black text-white rounded;
+  }
+  .scroll-top-btn {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .scroll-top-btn.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+   

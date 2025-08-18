@@ -10,7 +10,7 @@ const Welcome:React.FC = () =>{
         <section className="w-full relative lg:h-screen welcome pt-20">
             <div className="w-[90%] h-full mx-auto flex items-center justify-center flex-col gap-12">
                 <div className="w-full">
-                    <h1 className="font-abel text-center text-4xl lg:text-6xl capitalize font-extrabold text-[#ab4f43]" data-aos="fade-up">Welcome to art of God Ministry</h1>
+                    <h1 className="font-abel text-center text-4xl lg:text-6xl capitalize font-extrabold text-[#ab4f43]" data-aos="fade-up">Welcome to ark of God Ministry</h1>
                     <p className="text-black text-xl lg:text-2xl text-center mt-4" data-aos="fade-u" data-aos-delay="800">A sanctuary for the seeking and the saved, The Ark of God Ministry upholds the timeless truths of Scripture, fostering deep worship and discipleship.</p>
                 </div>
                 

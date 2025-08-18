@@ -3,6 +3,7 @@ import { useEffect} from "react"
 import './App.css'
 import Loader from "./components/ui/Loader"
 import AppRouter from "./config/AppRouter"
+import ScrollToTop from "./config/ScrollToTop"
 import { BrowserRouter } from "react-router-dom";
 
 import AOS from 'aos';
@@ -37,6 +38,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <AppRouter />
     </BrowserRouter>
   )

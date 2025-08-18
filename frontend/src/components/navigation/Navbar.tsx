@@ -9,8 +9,8 @@ import ToggleSidebar from "../ui/toggleSidebar/ToggleSidebar";
 
 
 const socials = [
-    {id:1,banner:faFacebook,path:"",color:"text-blue-400"},
-    {id:2,banner:faYoutube,path:"",color:"text-red-500"},
+    {id:1,banner:faFacebook,path:"https://www.facebook.com/groups/361360018744941/",color:"text-blue-600"},
+    {id:2,banner:faYoutube,path:"",color:"text-red-600"},
 ]
 interface NavbarProps {
   isSidebarOpen: boolean;
