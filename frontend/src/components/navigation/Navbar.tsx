@@ -5,16 +5,19 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/logo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook,faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
+import ToggleSidebar from "../ui/toggleSidebar/ToggleSidebar";
 
 
 const socials = [
     {id:1,banner:faFacebook,path:"",color:"text-blue-400"},
     {id:2,banner:faYoutube,path:"",color:"text-red-500"},
 ]
+interface NavbarProps {
+  isSidebarOpen: boolean;
+  toggleSidebar: () => void;
+}
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<NavbarProps> = ({isSidebarOpen, toggleSidebar}) => {
   return (
     <header className="w-full fixed top-0 left-0 p-2 z-50 backdrop-blur-sm overflow-hidden">
       <nav className="flex w-full lg:w-[95%] items-center justify-between px-2 lg:px-4  mx-auto">
@@ -51,9 +54,10 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* sidebar button */}
-        <button className="lg:hidden flex items-center justify-center rounded-md p-1 border border-[#ab4f43]">
-            <FontAwesomeIcon icon={faBars} className="text-2xl text-black"/>
-        </button>
+        <ToggleSidebar 
+          isSidebarOpen={isSidebarOpen} 
+          toggleSidebar={toggleSidebar} 
+        />
       </nav>
     </header>
   );
