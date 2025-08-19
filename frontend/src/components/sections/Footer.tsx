@@ -91,11 +91,20 @@ const Footer: React.FC = () => {
                     <div className="space-y-4">
                         <h2 className="text-xl font-bold">Our Location</h2>
                         <div className="rounded-lg overflow-hidden border-2 border-[#ab4f43]">
-                            <img 
-                                src={map} 
-                                alt="Church location map" 
-                                className="w-full h-48 object-cover hover:scale-105 transition duration-500"
-                            />
+                        <div className="w-full rounded-xl overflow-hidden shadow-lg">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.51405373155!2d36.89503399144966!3d-1.2436234781153424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15b9f24ea1c5%3A0x486fe9a009446c8e!2sSharp%20Corner!5e0!3m2!1sen!2ske!4v1755543645898!5m2!1sen!2ske"
+                        //   width="600"
+                        //   height="450"
+                          className="w-full h-[200px]"
+                          style={{ border: 0 }}
+                          allowFullScreen
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          title="The Ark of God Ministry Location"
+                          aria-label="Map to The Ark of God Ministry in Dandora Phase 5"
+                        />
+                    </div>
                         </div>
                     </div>
                 </div>

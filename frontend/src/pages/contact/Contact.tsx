@@ -35,7 +35,7 @@ const Contact:React.FC =() =>{
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-full lg:w-[90%] mx-auto lg:p-0 px-2">
 
                     {/* grid 1 */}
-                    <div className="flex flex-col items-center justify-center gap-2 relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.6)]">
+                    <div className="flex flex-col items-center justify-center gap-2 relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.6)]" data-aos="zoom-in" data-aos-delay="200">
                      {/* Background Image */}
                         <div className="absolute w-full h-full top-0 left-0">
                             <img src={banner1} alt="" className="w-full h-full object-cover object-center" />
@@ -53,7 +53,7 @@ const Contact:React.FC =() =>{
                         </div>
                     </div>
                     {/* grid 2 */}
-                    <div className="flex flex-col items-center justify-center gap-2 relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.6)]">
+                    <div className="flex flex-col items-center justify-center gap-2 relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.6)]" data-aos="zoom-in" data-aos-delay="200">
                      {/* Background Image */}
                         <div className="absolute w-full h-full top-0 left-0">
                             <img src={banner2} alt="" className="w-full h-full object-cover object-center" />
@@ -67,7 +67,7 @@ const Contact:React.FC =() =>{
                         </div>
                     </div>
                     {/* grid 3 */}
-                    <div className="flex flex-col items-center justify-center gap-2 relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.6)]">
+                    <div className="flex flex-col items-center justify-center gap-2 relative h-[300px] lg:h-[400px] rounded-xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.05),0_1px_3px_rgba(0,0,0,0.6)]" data-aos="zoom-in" data-aos-delay="200">
                      {/* Background Image */}
                         <div className="absolute w-full h-full top-0 left-0">
                             <img src={banner3} alt="" className="w-full h-full object-cover object-center" />
@@ -89,28 +89,28 @@ const Contact:React.FC =() =>{
                 <div className="w-full lg:w-[90%] mx-auto lg:p-0 px-2 flex flex-col lg:flex-row items-center justify-between">
                     <div className="w-full lg:w-[40%]">
                         <form action="" className="w-full flex flex-col gap-6">
-                            <div className="input w-full ">
+                            <div className="input w-full "  data-aos="fade-up" data-aos-delay="200">
                             <input type="text"className="w-full p-3 text-lg text-black border-2 border-gray-300 rounded-md focus:border-[#ab4f43] focus:ring-2 focus:ring-[#ab4f43]/30 focus:outline-none transition-all duration-200 placeholder-gray-400"placeholder="Name"/>
                             </div>
-                            <div className="input w-full ">
+                            <div className="input w-full "  data-aos="fade-up" data-aos-delay="200">
                             <input type="text"className="w-full p-3 text-lg text-black border-2 border-gray-300 rounded-md focus:border-[#ab4f43] focus:ring-2 focus:ring-[#ab4f43]/30 focus:outline-none transition-all duration-200 placeholder-gray-400"placeholder="Email"/>
                             </div>
-                            <div className="input w-full ">
+                            <div className="input w-full "  data-aos="fade-up" data-aos-delay="200">
                             <input type="text"className="w-full p-3 text-lg text-black border-2 border-gray-300 rounded-md focus:border-[#ab4f43] focus:ring-2 focus:ring-[#ab4f43]/30 focus:outline-none transition-all duration-200 placeholder-gray-400"placeholder="Phone Number"/>
                             </div>
-                            <div className="input w-full ">
+                            <div className="input w-full "  data-aos="fade-up" data-aos-delay="200">
                                 <textarea name="" id="" className="w-full p-2 px-3 text-lg text-black border-[2px] rounded-[3px] max-w-full h-48 focus:ring-2 focus:ring-[#ab4f43]/30 focus:outline-none transition-all duration-200 placeholder-gray-400" placeholder="Your Message"></textarea>
                             </div>
-                            <div className="w-full">
+                            <div className="w-full"  data-aos="fade-up" data-aos-delay="200">
                                 <button className="bg-[#ab4f43] text-white font-bold rounded-[3px] text-lg p-8 py-3">Send Now</button>
                             </div>
                         </form>
                     </div>
-                    <div className="flex items-center justify-center w-full lg:w-[60%]">
+                    <div className="flex items-center justify-center w-full lg:w-[60%]" data-aos="fade-up" data-aos-delay="200">
                         <img src={banner4} alt="" className="w-full h-full" />
                     </div>
                 </div>
-                <div className="w-full lg:w-[90%] mx-auto rounded-full lg:p-0 px-2">
+                <div className="w-full lg:w-[90%] mx-auto rounded-full lg:p-0 px-2" data-aos="fade-up" data-aos-delay="200">
                     <div className="w-full rounded-xl overflow-hidden shadow-lg">
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.51405373155!2d36.89503399144966!3d-1.2436234781153424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15b9f24ea1c5%3A0x486fe9a009446c8e!2sSharp%20Corner!5e0!3m2!1sen!2ske!4v1755543645898!5m2!1sen!2ske"

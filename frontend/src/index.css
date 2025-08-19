@@ -189,3 +189,12 @@ body{
     transform: translateY(0);
   }
    
+  /* gallery search */
+  .selected-toggle{
+    background-color: red;
+    color: white;
+  }
+  .selected-filter{
+    background-color: #ab4f43;
+    color: white;
+  }
