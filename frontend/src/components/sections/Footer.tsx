@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ROUTES } from "../../config/routes";
-import map from '../../../public/images/banners/location.png';
 
 const links = [
     { id: 1, label: "About", path: ROUTES.ABOUT },

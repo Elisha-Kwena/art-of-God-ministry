@@ -110,7 +110,7 @@ const Contact:React.FC =() =>{
                         <img src={banner4} alt="" className="w-full h-full" />
                     </div>
                 </div>
-                <div className="w-full lg:w-[90%] mx-auto rounded-full lg:p-0 px-2" data-aos="fade-up" data-aos-delay="200">
+                <div className="w-full lg:w-[90%] mx-auto rounded-full lg:p-0 px-2">
                     <div className="w-full rounded-xl overflow-hidden shadow-lg">
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.51405373155!2d36.89503399144966!3d-1.2436234781153424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15b9f24ea1c5%3A0x486fe9a009446c8e!2sSharp%20Corner!5e0!3m2!1sen!2ske!4v1755543645898!5m2!1sen!2ske"
